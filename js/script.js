@@ -1,15 +1,12 @@
-// =========================================================
-// TTSET GLOBAL LTD — Intern Portfolio Template
-// Vanilla JS: no build step, no dependencies.
-// =========================================================
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // ---- Footer year ----
+ 
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ---- Mobile nav toggle ----
+  
   var navToggle = document.getElementById('navToggle');
   var siteNav = document.getElementById('siteNav');
   if (navToggle && siteNav) {
@@ -25,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ---- Typed terminal line in hero ----
-  // [EDIT] Replace these lines with your own track / focus areas
+  
   var lines = [
     'Fomic polytechnic university Software Engineer',
     'ttset-intern --status "July 2026 Cohort"',
@@ -49,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
           charIndex++;
           if (charIndex === current.length) {
             deleting = true;
-            setTimeout(tick, 1600); // pause at full line
+            setTimeout(tick, 1600);
             return;
           }
         } else {
@@ -93,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ---- Scroll reveal ----
+ 
   var revealTargets = document.querySelectorAll(
     '.section-title, .about-grid, .skills-grid, .timeline-item, .project-card, .cert-item'
   );
